@@ -1384,7 +1384,7 @@
     $("#theGrid").wordsearchwidget({
       wordlist: words,
       gridsize: 12,
-      width: 250
+      width: 150
     });
   });
   
