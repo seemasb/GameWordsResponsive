@@ -142,10 +142,19 @@ body{
 
               @media only screen and (max-width: 600px) {
                 body {
-                  background-color: rgb(147, 158, 43);
+                  /* background-color: rgb(147, 158, 43); */
                 }
 
                 #theGrid{
                     width: 70%;
                 }
+
+                .rf-tgrid {
+                   
+                    font-size: 10px;
+                    padding: 5px;
+                    margin: auto;
+                    width: 70%;
+                
+                  }
               }
