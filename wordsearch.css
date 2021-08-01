@@ -1,21 +1,43 @@
      /* Style for grid cells */
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body{
+    background-color: #55B5F4;;
+    text-align: center;
+
+}
 .rf-tgrid {
     font-family: Arial;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 17px;
     margin: 1px;
-    padding: 8px;
+    padding: 10px;
     /*    border: 1px solid bisque;*/
     vertical-align: middle;
     text-align: center;
+    /* z-index: -1; */
+    /* border-radius:15px ; */
+
   }
   
   /* Style for the grid */
   .rf-tablestyle {
-    border: 2px solid;
-    border-color: black;
-    background-color: #eee;
+    /* border: 2px solid ; */
+    border-radius:15px ;
+    /* z-index: 100; */
+    /* border-color: rgb(33, 148, 18); */
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
     cursor: pointer;
+    margin: auto;
+    /* min-width: 35%; */
+
+    align-self: center;
+    position: relative;
+    width: fit-content;
+    left: 3%;
+
   }
   
   /* Style for the div containing the grid */
@@ -29,14 +51,15 @@
     font-family: Arial, sans-serif;
     font-weight: normal;
     font-size: 14px;
-    float: left;
+    /* float: left; */
     padding-right: 10px;
     cursor: default;
     margin: 1em 1em 1em 0;
-    width: 200px;
-    border: 2px solid;
-    border-color: black;
-    background-color: #eee;
+    /* text-decoration: none; */
+    /* width: 200px; */
+    /* border: 2px solid; */
+    /* border-color: black;
+    background-color: #eee; */
     cursor: pointer;
   }
   
@@ -70,6 +93,49 @@
   }
   
 
-            #theGrid{
-                background-color: #00ffff;
+            /* .the{
+                background-color: #f31760;
+            } */
+
+
+            .listWords{
+                /* background-color: yellow; */
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                list-style-type: none;
+                gap: 10px;
+
+                margin: auto;
+                margin-top: 20px;
+                /* width: 40%; */
+                align-self: center;
+                position: relative;
+                width: fit-content;
+                /* left: 1%; */
+
             }
+
+            .listWordItem{
+                padding: 10px;
+                background-color: white;
+                border-radius: 15px;
+                height: 7px;
+                min-width: 70px;
+            }
+
+            #theGrid{
+                display: flex;
+                flex-direction: column;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+                font-weight: normal;
+                margin-top: 30px;
+                margin-bottom: 20px;
+              
+                /* font-weight: lighter; */
+              /* padding-top: 10px; */
+              }

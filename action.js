@@ -1258,7 +1258,7 @@
         for (var i = 0; i < grid.size(); i++) {
           puzzleGrid += "<tr>";
           for (var j = 0; j < grid.size(); j++) {
-            puzzleGrid += "<td  class='rf-tgrid'>" + cells[i][j].value + "</td>";
+            puzzleGrid += "<td  class='rf-tgrid the'>" + cells[i][j].value + "</td>";
           }
           puzzleGrid += "</tr>";
         }
@@ -1277,10 +1277,10 @@
           x++;
         });
   
-        var words = "<div id='rf-wordcontainer'><ul>";
+        var words = "<div id='rf-wordcontainer'><ul class='listWords'>";
         $(model.wordList.words).each(function () {
           words +=
-            "<li class=rf-p" + this.isPlaced + ">" + this.originalValue + "</li>";
+            "<li class='listWordItem'" + this.isPlaced + ">" + this.originalValue + "</li>";
         });
         words += "</ul></div>";
   
@@ -1379,7 +1379,7 @@
   
   $(document).ready(function () {
     var words =
-      "cold,gas,radiator,heating,boiler,frozen,energy,power,scarf,home,insulation,warmth";
+      "cold,gas,radiator,heating,boiler";
     //attach the game to a div
     $("#theGrid").wordsearchwidget({
       wordlist: words,
