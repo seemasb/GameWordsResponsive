@@ -459,7 +459,7 @@
       },
   
       arm: function (c) {
-        $(c) //.removeClass("rf-selected")
+        $(c) 
           .removeClass("rf-glowing")
           .addClass("rf-armed");
       },
@@ -476,19 +476,19 @@
         $(c)
           .removeClass("rf-armed")
           .removeClass("rf-glowing")
-          .animate({ opacity: "20" }, 500, "linear", function () {
+          .animate( 500, "linear", function () {
             $(c)
-              .removeClass("rf-highlight")
-              .addClass("rf-selected")
-              .animate({ opacity: "show" }, 500, "linear");
+              // .removeClass("rf-highlight")                       //////////////////////////Hint/////////////////////////
+              // .addClass("rf-selected")
+              // .animate({ opacity: "show" }, 500, "linear");
           });
       },
   
       highlight: function (c) {
         $(c)
-          .removeClass("rf-armed")
-          .removeClass("rf-selected")
-          .addClass("rf-highlight");
+          // .removeClass("rf-armed")
+          // .removeClass("rf-selected")
+          // .addClass("rf-highlight");
       },
   
       signalWordFound: function (w) {

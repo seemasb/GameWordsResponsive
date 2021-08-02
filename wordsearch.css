@@ -76,11 +76,11 @@ body{
   }
   
   #rf-tablegrid .rf-highlight {
-    background: red;
+    /* background: red; */
   }
   
   #rf-tablegrid .rf-glowing {
-    background: gold;
+    background: rgb(211, 211, 208);
   }
   
   #rf-tablegrid .rf-selected {
