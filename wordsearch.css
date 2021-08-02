@@ -5,6 +5,7 @@
 body{
     background-color: #55B5F4;;
     text-align: center;
+    /* margin: 0px; */
 
 }
 .rf-tgrid {
@@ -83,7 +84,7 @@ body{
   }
   
   #rf-tablegrid .rf-selected {
-    background: #00ffff;
+    background: yellow;
   }
   
   /* style for words that didn't make it on the grid */
@@ -117,7 +118,7 @@ body{
             }
 
             .listWordItem{
-                padding: 10px;
+                padding: 6px 11px 11px 11px;
                 background-color: white;
                 border-radius: 15px;
                 height: 7px;
@@ -146,15 +147,58 @@ body{
                 }
 
                 #theGrid{
-                    width: 70%;
+                    width: 90%;
+                    position: relative;
+                    left: 5%;
                 }
 
                 .rf-tgrid {
                    
                     font-size: 10px;
-                    padding: 5px;
+                    padding: 8px;
                     margin: auto;
-                    width: 70%;
+                    width: 90%;
                 
                   }
+
+                  h1 {
+                    text-transform: uppercase;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: normal;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    font-size: 100%;
+                  
+                    /* font-weight: lighter; */
+                  /* padding-top: 10px; */
+                  }
+
+                  .listWords{
+                    /* background-color: yellow; */
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    list-style-type: none;
+                    gap: 10px;
+    
+                    margin: auto;
+                    margin-top: 10px;
+                    width: 100%;
+                    /* align-self: center; */
+                    position: relative;
+                    /* width: fit-content; */
+                    left: -7%;
+                    place-content: center;
+    
+                }
+    
+                .listWordItem{
+                    padding: 5px 8px 8px 8px;
+                    background-color: white;
+                    border-radius: 15px;
+                    font-size: 12px;
+                    height: 7px;
+                    min-width: 70px;
+
+                }
               }

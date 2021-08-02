@@ -1379,7 +1379,7 @@
   
   $(document).ready(function () {
     var words =
-      "cold,gas,radiator,heating,boiler";
+      "paltel,dcx,data,experience,innovation";
     //attach the game to a div
     $("#theGrid").wordsearchwidget({
       wordlist: words,
